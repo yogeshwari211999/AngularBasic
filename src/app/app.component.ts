@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'practice';
+  name = 'practice';
+  chidData:string | undefined;
+
+  receiveDataFromChild(data:string){
+    this.chidData=data;
+    console.log("received data fromchild",data)
+  }
 }
